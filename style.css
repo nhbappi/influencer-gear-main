@@ -13,6 +13,11 @@ body{
 }
 
 
+
+
+/* common */
+
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -59,9 +64,8 @@ body{
     color: #FF008E;
 }
 
-header{
- 
-}
+/* nav part */
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -86,6 +90,8 @@ nav{
    color: #a5075e;
    cursor: pointer;
 }
+
+/* banner part */
 
 .banner{
     height: calc(100vh - 80px);
@@ -118,7 +124,15 @@ nav{
     background-image: url(./images/Circle\ design.svg);
     background-position: center;
     background-repeat: no-repeat;
-   width: 100%;
+   width: 70%;
+   background-position: cover;
+ 
+   margin-bottom: 50px;
+   
+}
+.banner-right:hover img{
+    transform: scale(1.3);
+    transition: transform 1s ease-in-out;
    
 }
 
@@ -157,18 +171,13 @@ nav{
    transition: transform 1s ease-in-out;
 }
 
+
+
 /* collections part css */
 .collections{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-
-   
-  grid-gap: 40px;
-
-    
-   /* grid-auto-flow: row; */
-  
-  /* /* align-items: center; */
+    grid-template-columns: repeat(3,1fr); 
+    grid-gap: 40px;
    justify-items: center;
 
 
@@ -225,6 +234,8 @@ nav{
 #description{
     margin-left: 8px;
 }
+
+/* see more */
 
 .see-more{
     display: flex;
@@ -318,7 +329,7 @@ footer p{
 }
 
 
-/* navbar */
+/* nav icon */
 #nav-toggler{
     display: none;
 }
@@ -359,9 +370,7 @@ footer p{
     .contact{
         grid-template-columns: 1fr 1fr;
     }
-   .footer{
-       
-   }
+   
 }
 
 @media (max-width:800px){
